@@ -184,7 +184,7 @@ nav ul{display:none}.proj{padding:24px}section{padding:58px 0}
 <div class="stat"><b>222.8 W</b><span>Largest spacecraft array designed — 184 cells</span></div>
 <div class="stat"><b>R = 0.991</b><span>CubeSat EPS reliability, N-1 redundant</span></div>
 <div class="stat"><b>5</b><span>IEEE publications — 3 as first author</span></div>
-<div class="stat"><b>10</b><span>Hardware projects designed &amp; delivered</span></div>
+<div class="stat"><b>12</b><span>Hardware projects designed &amp; delivered</span></div>
 </div>
 <div class="comp-grid">
 <div class="comp"><h4>Space Power Systems</h4><p>CubeSat EPS, PCDU design, triple-junction GaAs arrays, UMPPT, N-1 redundancy, GSFC-STD-7000 derating</p></div>
@@ -198,7 +198,7 @@ nav ul{display:none}.proj{padding:24px}section{padding:58px 0}
 </div></section>
 
 <section id="work" class="alt"><div class="wrap">
-<div class="sec-k">SELECTED WORK</div><h2>Ten projects, architecture to hardware</h2>
+<div class="sec-k">SELECTED WORK</div><h2>Twelve projects, architecture to hardware</h2>
 <p class="lede">Each project below was designed by me end to end — analysis, schematic, layout and validation. The first two were delivered to SOLLAB Co., Ltd.</p>
 <article class="proj sollab" id="p01">
 <div class="phead"><div class="pnum">PROJECT 01</div><span class="badge">SOLLAB Co., Ltd.</span></div>
@@ -274,22 +274,40 @@ nav ul{display:none}.proj{padding:24px}section{padding:58px 0}
 <div class="outcome"><span>Outcome</span> Released fabrication-ready to JLCPCB with native EasyEDA Pro source, netlist and BOM after a documented client design review — every review finding closed and verified.</div></article>
 <article class="proj" id="p09">
 <div class="phead"><div class="pnum">PROJECT 09</div></div>
-<h3>Flight-Ready CanSat — AAS International Competition</h3>
-<div class="pclient">American Astronautical Society — United States</div>
-<div class="pmeta">Role: Electrical &amp; Mechanical Lead  ·  June 2025</div>
-<p class="psum">A can-sized satellite designed, built and flown in international competition, placing in the top 40 percent of a global finalist field.</p>
-<div class="gal c0"></div>
-<div class="hl-label">TECHNICAL HIGHLIGHTS</div><ul class="hl"><li>System architecture and <b>custom PCB design</b> for the full avionics stack.</li><li>Fabrication, assembly and flight-readiness validation of the integrated vehicle.</li><li>Resilient power architecture for a reusable, recoverable small-satellite class.</li></ul>
-<div class="outcome"><span>Outcome</span> <b>16th place among 40 international finalist teams</b>, United States, June 2025. Design experience published as a first-author IEEE paper on resilient CanSat power systems.</div></article>
+<h3>Team Ababil CanSat — 16th Worldwide, AAS Competition 2025</h3>
+<div class="pclient">20th International CanSat Design-Build-Launch Competition · Virginia, USA</div>
+<div class="pmeta">Role: Electrical &amp; Mechanical Lead  ·  Six custom flight boards  ·  5–9 June 2025</div>
+<p class="psum">A complete flight-ready CanSat avionics suite — six circular boards designed from scratch under strict size, mass and reliability constraints, flown in international competition against a global field.</p>
+<div class="gal c6"><figure><div class="ph"><img src="img/cansat_team.jpg" alt="Team Ababil, AAUB — Monterey, Virginia, June 2025" loading="lazy" onclick="lb(this)"></div><figcaption>Team Ababil, AAUB — Monterey, Virginia, June 2025</figcaption></figure><figure><div class="ph"><img src="img/cansat_obc_top.jpg" alt="OBC top — ESP32, XBee PRO S3B radio, gimbal and camera ports" loading="lazy" onclick="lb(this)"></div><figcaption>OBC top — ESP32, XBee PRO S3B radio, gimbal and camera ports</figcaption></figure><figure><div class="ph"><img src="img/cansat_eps.jpg" alt="EPS — dual 18650 cells, TP4056 charging, beacon and main power switching" loading="lazy" onclick="lb(this)"></div><figcaption>EPS — dual 18650 cells, TP4056 charging, beacon and main power switching</figcaption></figure><figure><div class="ph"><img src="img/cansat_obc_bot.jpg" alt="OBC underside — buck rails, INA219 current sensing, telemetry radio" loading="lazy" onclick="lb(this)"></div><figcaption>OBC underside — buck rails, INA219 current sensing, telemetry radio</figcaption></figure><figure><div class="ph"><img src="img/cansat_camera.jpg" alt="Deployable camera board — SQ11 module and umbilical port" loading="lazy" onclick="lb(this)"></div><figcaption>Deployable camera board — SQ11 module and umbilical port</figcaption></figure><figure><div class="ph"><img src="img/cansat_beacon.jpg" alt="Audio beacon board — recovery buzzer and indicator ring" loading="lazy" onclick="lb(this)"></div><figcaption>Audio beacon board — recovery buzzer and indicator ring</figcaption></figure></div>
+<div class="hl-label">TECHNICAL HIGHLIGHTS</div><ul class="hl"><li>Designed <b>all six flight boards</b> in EasyEDA Pro — EPS, OBC (dual-sided), data storage, deployable camera and audio beacon — from schematic through layout, routing and 3D mechanical validation.</li><li><b>Power architecture</b>: dual 18650 Li-ion cells with independent TP4056 charge channels, IRLZ44N switching, isolated main and beacon power domains, multi-rail buck regulation with INA219 current telemetry.</li><li><b>Avionics</b>: ESP32 flight computer with XBee PRO S3B long-range telemetry, ESP32-CAM and gimbal interfaces, DS3231 RTC and microSD logging on a dedicated storage board.</li><li><b>Recovery systems</b>: deployable camera board with umbilical port, plus an audio beacon board with buzzer and LED indicator ring for post-landing location.</li><li>Every board constrained to the CanSat envelope — circular form factor, stacked mounting, mass budget and launch vibration survival.</li></ul>
+<div class="outcome"><span>Outcome</span> <b>16th worldwide (89.72% overall)</b> at the AAS International CanSat Competition, Virginia. Phase scores: PDR 98.02% · CDR 97.35% · ENV 93.75% · <b>FRR 100%</b> · PFR 78.79% — achieved by a first-time team building from zero. Published as a first-author IEEE paper on resilient CanSat-class power systems.</div></article>
 <article class="proj" id="p10">
 <div class="phead"><div class="pnum">PROJECT 10</div></div>
-<h3>Rover-71 — Anatolian Rover Challenge</h3>
-<div class="pclient">ARC'25 — Turkey</div>
-<div class="pmeta">Role: Electrical Lead  ·  2025</div>
-<p class="psum">Electrical architecture and power integration for an indigenous Mars rover platform competing against 27 international teams.</p>
-<div class="gal c0"></div>
-<div class="hl-label">TECHNICAL HIGHLIGHTS</div><ul class="hl"><li>Complete <b>electrical architecture</b> for drive, control and power distribution.</li><li>PCB integration and system-level testing across mechanical and software teams.</li><li>Field validation under competition conditions.</li></ul>
-<div class="outcome"><span>Outcome</span> <b>8th position globally (83.83%)</b> among 27 international teams at ARC'25, Turkey. Co-authored an IEEE TENSYMP publication on the rover's electro-mechanical design.</div></article>
+<h3>Rover-71 — Four-Board Electrical Architecture</h3>
+<div class="pclient">Anatolian Rover Challenge (ARC'25), Turkey · University Rover Challenge</div>
+<div class="pmeta">Role: Electrical Lead  ·  Every PCB custom-designed  ·  8th globally of 27 teams</div>
+<p class="psum">The complete electrical architecture for an indigenous Mars rover — four custom boards carrying autonomous compute, manipulator control, science instrumentation and high-current drive, built to survive Martian-analogue field conditions.</p>
+<div class="gal c4"><figure><div class="ph"><img src="img/rover_field.jpg" alt="Rover-71 deployed in the field — University Rover Challenge" loading="lazy" onclick="lb(this)"></div><figcaption>Rover-71 deployed in the field — University Rover Challenge</figcaption></figure><figure><div class="ph"><img src="img/rover_main.jpg" alt="Main control board — NVIDIA Jetson Orin NX, multi-rail power and cooling" loading="lazy" onclick="lb(this)"></div><figcaption>Main control board — NVIDIA Jetson Orin NX, multi-rail power and cooling</figcaption></figure><figure><div class="ph"><img src="img/rover_arm.jpg" alt="Robotic arm controller — TB6600 stepper drive stage" loading="lazy" onclick="lb(this)"></div><figcaption>Robotic arm controller — TB6600 stepper drive stage</figcaption></figure><figure><div class="ph"><img src="img/rover_wheel.jpg" alt="Wheel-gear motor driver unit — BTS7960 high-current stage" loading="lazy" onclick="lb(this)"></div><figcaption>Wheel-gear motor driver unit — BTS7960 high-current stage</figcaption></figure></div>
+<div class="hl-label">TECHNICAL HIGHLIGHTS</div><ul class="hl"><li><b>Main control board</b> — central compute hub integrating <b>NVIDIA Jetson Orin NX (16 GB)</b>, Raspberry Pi 4 and Arduino Mega for autonomous navigation and decision-making, with multiple independent buck rails and active thermal management.</li><li><b>Robotic arm controller</b> — TB6600 stepper drive stage for precise manipulator control during sample collection and scientific operations.</li><li><b>Science module</b> — dedicated board for experiment execution and real-time sensor data acquisition.</li><li><b>Wheel-gear motor driver unit</b> — BTS7960 DC drive stage with opto-isolated inputs and robust high-current handling for rover mobility.</li><li>Architected for <b>reliability, modularity and field survivability</b> — each subsystem independently powered, protected and replaceable in the field.</li></ul>
+<div class="outcome"><span>Outcome</span> <b>8th position globally (83.83%)</b> among 27 international teams at ARC'25, Turkey, and field-deployed at the University Rover Challenge. Co-authored an IEEE TENSYMP 2024 publication on the rover's electro-mechanical design.</div></article>
+<article class="proj" id="p11">
+<div class="phead"><div class="pnum">PROJECT 11</div></div>
+<h3>CC2651R3 Wireless Sensor Node — 0.8 &micro;A Sleep, Single AA</h3>
+<div class="pclient">International client — commercial delivery</div>
+<div class="pmeta">Role: PCB &amp; Embedded Hardware Engineer  ·  2026  ·  Zigbee + BLE 5.0</div>
+<p class="psum">An ultra-low-power dual-protocol wireless sensor node running for years from a single AA cell — printed 2.4 GHz antenna, matched balun and a boost front end that runs down to 0.7 V.</p>
+<div class="gal c3"><figure><div class="ph"><img src="img/cc2651_3dtop.jpg" alt="Radio side — CC2651R3, balun and printed 2.4 GHz antenna" loading="lazy" onclick="lb(this)"></div><figcaption>Radio side — CC2651R3, balun and printed 2.4 GHz antenna</figcaption></figure><figure><div class="ph"><img src="img/cc2651_3dbot.jpg" alt="Assembled with AA holder and terminal block" loading="lazy" onclick="lb(this)"></div><figcaption>Assembled with AA holder and terminal block</figcaption></figure><figure><div class="ph"><img src="img/cc2651_top2d.jpg" alt="Top layer — RF section, matching network and antenna keep-out" loading="lazy" onclick="lb(this)"></div><figcaption>Top layer — RF section, matching network and antenna keep-out</figcaption></figure></div>
+<div class="hl-label">TECHNICAL HIGHLIGHTS</div><ul class="hl"><li><b>TI CC2651R3 SoC</b> (VQFN-48) running <b>Zigbee (IEEE 802.15.4) and BLE 5.0</b> at 2.4 GHz, +5 dBm output.</li><li><b>0.8 &micro;A sleep current</b> — single AA cell (1.5 V) boosted to 3.3 V by a TPS610994 operating from 0.7 V, feeding the SoC's internal DC/DC to a 1.68 V core rail.</li><li><b>RF chain</b>: Johanson 2450BM15A0015E balun into a printed PCB trace antenna — matched layout with controlled keep-out, no external antenna cost.</li><li>48 MHz main and 32.768 kHz sleep crystals; dry-contact reed switch input for door, window and tamper sensing.</li><li>2-layer, single-side SMD assembly for low-cost JLCPCB / PCBWay turnkey fabrication.</li></ul>
+<div class="outcome"><span>Outcome</span> Delivered fabrication-ready with full technical documentation covering RF layout rules, power budget and assembly notes.</div></article>
+<article class="proj" id="p12">
+<div class="phead"><div class="pnum">PROJECT 12</div></div>
+<h3>Solar Energy Harvesting PCB — 97% Boost Efficiency</h3>
+<div class="pclient">International client — commercial delivery</div>
+<div class="pmeta">Role: PCB &amp; Embedded Hardware Engineer  ·  2026  ·  AEM15820 + sodium-ion</div>
+<p class="psum">A microwatt-class solar harvesting front end with MPPT, sodium-ion charging and an ESP32 power interface — the same photovoltaic conversion discipline as the spacecraft array, at the opposite end of the power scale.</p>
+<div class="gal c2"><figure><div class="ph"><img src="img/aem_3da.jpg" alt="Harvesting board — solar and USB-C inputs, battery and load rails" loading="lazy" onclick="lb(this)"></div><figcaption>Harvesting board — solar and USB-C inputs, battery and load rails</figcaption></figure><figure><div class="ph"><img src="img/aem_layout.jpg" alt="Layout — SOLAR IN, PSU IN, BATT IN and PWR OUT domains" loading="lazy" onclick="lb(this)"></div><figcaption>Layout — SOLAR IN, PSU IN, BATT IN and PWR OUT domains</figcaption></figure></div>
+<div class="hl-label">TECHNICAL HIGHLIGHTS</div><ul class="hl"><li><b>e-peas AEM15820</b> energy-harvesting PMIC reaching <b>97% boost efficiency</b>, with MPPT tuned to a Voltaic 2.5 W ETFE panel at an 85% ratio.</li><li><b>Sodium-ion 18650 storage</b> (2P Hakadi, 4.1 V charge) configured over I2C — and <b>chemistry-flexible by firmware</b>: LiFePO4, Li-ion or LiPo can be swapped with no PCB respin.</li><li>USB-C 5 V fallback charging at 100 mA constant-current with constant-voltage termination.</li><li>Regulated 3.3 V / 100 mA rail for an ESP32 and sensors, plus a raw storage tap for high-current peripherals such as a cellular modem.</li><li>I2C telemetry and event-driven control, NTC thermal protection, and a <b>15 nA shipping mode</b> for inventory storage.</li></ul>
+<div class="outcome"><span>Outcome</span> Delivered with register configuration maps, an ESP32 driver library, a full application sketch, power-routing guidance, operational state definitions, troubleshooting guide and BOM.</div></article>
 </div></section>
 
 <section id="experience"><div class="wrap">
